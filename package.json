@@ -4,7 +4,12 @@
   "description": "This project catch token for user github, because CORS github pages",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurFritz/github-token.git"
   },
   "keywords": [
     "token",
@@ -13,6 +18,10 @@
   ],
   "author": "Arthur Fritz Santiago",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArthurFritz/github-token/issues"
+  },
+  "homepage": "https://github.com/ArthurFritz/github-token#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
