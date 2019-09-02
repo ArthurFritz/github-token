@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', function (req, res) {
-  res.send('This pos-mock service ready!');
+  res.send('This github-token service ready!');
 });
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
