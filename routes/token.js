@@ -6,11 +6,11 @@ router.get('/:code', function(req, response) {
     console.log('https://github.com/login/oauth/access_token?' +
     'client_id=' + process.env.CLIENT_ID + 
     '&client_secret=' + process.env.GITHUB_SECRET +
-    '&code ='+ req.params.code);
+    '&code='+ req.params.code);
     request.get('https://github.com/login/oauth/access_token?' +
         'client_id=' + process.env.CLIENT_ID + 
         '&client_secret=' + process.env.GITHUB_SECRET +
-        '&code ='+ req.params.code
+        '&code='+ req.params.code
     , (error, res, body) => {
         console.log(res.body);
         if (error) {
