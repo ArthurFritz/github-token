@@ -3,11 +3,11 @@ var router = express.Router();
 const request = require('request');
 
 router.get('/:code', function(req, response) {
-    request.post('https://github.com/login/oauth/access_token', {
-        client_id: process.env.CLIENT_ID,
-        client_secret: process.env.GITHUB_SECRET,
-        code: req.params.code
-    }, (error, res, body) => {
+    request.get('https://github.com/login/oauth/access_token?' +
+        'client_id=' + process.env.CLIENT_ID + 
+        '&client_secret=' + process.env.GITHUB_SECRET +
+        '&code ='+ req.params.code
+    , (error, res, body) => {
         console.log(res.body);
         if (error) {
             response.status(400).json(error); 
