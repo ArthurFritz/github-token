@@ -8,6 +8,7 @@ router.get('/:code', function(req, response) {
         client_secret: process.env.GITHUB_SECRET,
         code: req.params.code
     }, (error, res, body) => {
+        console.log(res);
         if (error) {
             response.status(400).json(error); 
             return;
