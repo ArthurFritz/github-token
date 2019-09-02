@@ -1,0 +1,21 @@
+{
+  "name": "github-token",
+  "version": "1.0.0",
+  "description": "This project catch token for user github, because CORS github pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "token",
+    "github",
+    "OAuth2"
+  ],
+  "author": "Arthur Fritz Santiago",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
